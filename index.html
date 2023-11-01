@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prayer timing application</title>
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Container -->
+  <div class="container">
+    <h2>أوقات الصلاة</h2>
+    <!-- Start City Name + Date -->
+    <div>
+      <h1 id="city-name">القاهرة</h1>
+      <div class="date" id="date1">الجمعة ٢٤ نوفمبر</div>
+    </div>
+    <!-- End City Name + Date //-->
+    <hr>
+    <!-- Start Prayers Time Card Section -->
+    <div class="cards-sections">
+      <!-- Start Header of the card section -->
+      <div class="card">
+        <div class="header">
+          <h1>الفجر</h1>
+        </div>
+        <!-- End Header of the card section -->
+        <!-- Start body of the time section -->
+        <div class="body">
+          <h1 class="time" id="fajr-time">
+            05:30
+          </h1>
+        </div>
+        <!-- End body of the time section -->
+      </div>
+      <div class="card">
+        <div class="header">
+          <h1>الشروق</h1>
+        </div>
+        <!-- End Header of the card section -->
+        <!-- Start body of the time section -->
+        <div class="body">
+          <h1 class="time" id="sunrise-time">
+            06:54
+          </h1>
+        </div>
+        <!-- End body of the time section -->
+      </div>
+      <div class="card">
+        <div class="header">
+          <h1>الظهر</h1>
+        </div>
+        <!-- End Header of the card section -->
+        <!-- Start body of the time section -->
+        <div class="body">
+          <h1 class="time" id="dhuhr-time">
+            12:41
+          </h1>
+        </div>
+        <!-- End body of the time section -->
+      </div>
+      <div class="card">
+        <div class="header">
+          <h1>العصر</h1>
+        </div>
+        <!-- End Header of the card section -->
+        <!-- Start body of the time section -->
+        <div class="body">
+          <h1 class="time" id="asr-time">
+            16:00
+          </h1>
+        </div>
+        <!-- End body of the time section -->
+      </div>
+      <div class="card">
+        <div class="header">
+          <h1>المغرب</h1>
+        </div>
+        <!-- End Header of the card section -->
+        <!-- Start body of the time section -->
+        <div class="body">
+          <h1 class="time" id="sunset-time">
+            06:28
+          </h1>
+        </div>
+        <!-- End body of the time section -->
+      </div>
+      <div class="card">
+        <div class="header">
+          <h1>العشاء</h1>
+        </div>
+        <!-- End Header of the card section -->
+        <!-- Start body of the time section -->
+        <div class="body">
+          <h1 class="time" id="isha-time">
+            19:43
+          </h1>
+        </div>
+        <!-- End body of the time section -->
+      </div>
+    </div>
+    <!-- End Prayers Time Card Section -->
+
+    <!-- Start Change City Select -->
+    <div class="citySelect">
+      <select name="" id="citiesSelect">
+      </select>
+    </div>
+    <!-- End Change City Select //-->
+  </div>
+  <!-- End Container //-->
+</body>
+<script src="/node_modules/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</html>
